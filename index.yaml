@@ -1,0 +1,33 @@
+apiVersion: v1
+entries:
+  chart2:
+  - apiVersion: v1
+    appVersion: "1.0"
+    created: 2018-09-11T14:53:24.266816622Z
+    description: A Helm chart for Kubernetes
+    digest: b7eea9e00bd9bf82f2ce507a2a93b461428c55da2329a6ddaba6d216481b2e7f
+    name: chart2
+    urls:
+    - https://github.com/mohammed-ali-1/hello-world-chart-repo.git/chart2-0.1.0.tgz
+    version: 0.1.0
+  chart3:
+  - apiVersion: v1
+    appVersion: "1.0"
+    created: 2018-09-11T14:53:24.267478586Z
+    description: A Helm chart for Kubernetes
+    digest: 311ebb954680263efa8540b9b9e0af37f940f1d1320fae7b78ae6f6aeb295215
+    name: chart3
+    urls:
+    - https://github.com/mohammed-ali-1/hello-world-chart-repo.git/chart3-0.1.0.tgz
+    version: 0.1.0
+  hello-world-chart:
+  - apiVersion: v1
+    appVersion: "1.0"
+    created: 2018-09-11T14:53:24.267813045Z
+    description: A Helm chart for Kubernetes
+    digest: ae2aa08c251cb09f9e8918fbe3aea4a06120faba2cbd716a5b5b94c0ce74cd4c
+    name: hello-world-chart
+    urls:
+    - https://github.com/mohammed-ali-1/hello-world-chart-repo.git/hello-world-chart-0.1.0.tgz
+    version: 0.1.0
+generated: 2018-09-11T14:53:24.265957186Z
