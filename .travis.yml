@@ -9,6 +9,7 @@ env:
 
 before-install:
  - chmod +x test.sh
+ - chmod +x push.sh
 
 install:
  - PATH=`pwd`/linux-amd64/:$PATH
