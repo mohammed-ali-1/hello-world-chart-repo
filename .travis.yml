@@ -1,0 +1,17 @@
+language: python
+
+env:
+ global:
+  - REPO_DIR=/home/travis/build/hello-world-chart-repo
+  - REPO_URL=https://github.com/mohammed-ali-1/hello-world-chart-repo.git
+  - HELMQA_URL=https://helmqa-helmqa.a3c1.starter-us-west-1.openshiftapps.com
+
+before-install:
+ - chmod +x test.sh
+
+install:
+ - PATH=`pwd`/linux-amd64/:$PATH
+ - sudo apt-get install jq
+ - sudo apt-get install curl
+
+script: ./test.sh
