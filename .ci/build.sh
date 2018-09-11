@@ -4,10 +4,11 @@ set -e
 REPO_URL="${REPO_URL:-https://github.com/mohammed-ali-1/hello-world-chart-repo.git}"
 echo "----> Deploying to $REPO_URL"
 
+helm_response=`curl -X GET $HELMQA_URL'/livecheck?repo='$REPO_URL`
 helm_code=`curl -X GET $HELMQA_URL'/livecheck?repo='$REPO_URL | jq .code`
 
 if [ $helm_code == 404 ]; then
-	exit 1;
+	echo "-------> HelmQA error: $helm_response"; exit 1;
 fi
 
 GIT_REPO="$(git config remote.origin.url)"
