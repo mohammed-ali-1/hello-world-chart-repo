@@ -5,7 +5,7 @@ REPO_URL="${REPO_URL:-https://github.com/mohammed-ali-1/hello-world-chart-repo.g
 echo "----> Deploying to $REPO_URL"
 
 helm_response=`curl -X GET $HELMQA_URL'/livecheck?repo='$REPO_URL`
-helm_code=`curl -X GET $HELMQA_URL'/livecheck?repo='$REPO_URL | jq .code`
+helm_code=`echo $helm_response | jq .code`
 
 if [ $helm_code == 404 ]; then
 	echo "-------> HelmQA error: $helm_response"; exit 1;
