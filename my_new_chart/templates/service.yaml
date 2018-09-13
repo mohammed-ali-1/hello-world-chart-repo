@@ -1,0 +1,19 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: {{ template "my_new_chart.fullname" . }}
+  labels:
+    app: {{ template "my_new_chart.name" . }}
+    chart: {{ template "my_new_chart.chart" . }}
+    release: {{ .Release.Name }}
+    heritage: {{ .Release.Service }}
+spec:
+  type: {{ .Values.service.type }}
+  ports:
+    - port: {{ .Values.service.port }}
+      targetPort: http
+      protocol: TCP
+      name: http
+  selector:
+    app: {{ template "my_new_chart.name" . }}
+    release: {{ .Release.Name }}
