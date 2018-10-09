@@ -3,7 +3,7 @@ entries:
   chart2:
   - apiVersion: v1
     appVersion: "1.0"
-    created: 2018-09-11T14:53:24.266816622Z
+    created: 2018-10-09T14:48:07.579809667Z
     description: A Helm chart for Kubernetes
     digest: b7eea9e00bd9bf82f2ce507a2a93b461428c55da2329a6ddaba6d216481b2e7f
     name: chart2
@@ -13,7 +13,7 @@ entries:
   chart3:
   - apiVersion: v1
     appVersion: "1.0"
-    created: 2018-09-11T14:53:24.267478586Z
+    created: 2018-10-09T14:48:07.580303407Z
     description: A Helm chart for Kubernetes
     digest: 311ebb954680263efa8540b9b9e0af37f940f1d1320fae7b78ae6f6aeb295215
     name: chart3
@@ -23,11 +23,25 @@ entries:
   hello-world-chart:
   - apiVersion: v1
     appVersion: "1.0"
-    created: 2018-09-11T14:53:24.267813045Z
+    created: 2018-10-09T14:48:07.58087255Z
     description: A Helm chart for Kubernetes
     digest: ae2aa08c251cb09f9e8918fbe3aea4a06120faba2cbd716a5b5b94c0ce74cd4c
     name: hello-world-chart
     urls:
     - https://github.com/mohammed-ali-1/hello-world-chart-repo.git/hello-world-chart-0.1.0.tgz
     version: 0.1.0
-generated: 2018-09-11T14:53:24.265957186Z
+  my_new_chart:
+  - apiVersion: v1
+    appVersion: "1.0"
+    created: 2018-10-09T14:48:07.58157097Z
+    description: A Helm chart for Kubernetes
+    digest: b4040e50241dc8a5f5e849c036eb0fee90f91df8022ca68be5c0d90bc9d84542
+    maintainers:
+    - email: alam@zhaw.ch
+      name: Mohammed Al-Ameen
+      url: https://github.com/mohammed-ali-1
+    name: my_new_chart
+    urls:
+    - https://github.com/mohammed-ali-1/hello-world-chart-repo.git/my_new_chart-0.1.0.tgz
+    version: 0.1.0
+generated: 2018-10-09T14:48:07.579012354Z
