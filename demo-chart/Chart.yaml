@@ -4,6 +4,7 @@ description: A Helm chart for Kubernetes
 name: demo-chart
 version: 0.1.0
 maintainers:
-  - name: Mohammed
-    email: a@b.com
-    url: www.google.com
+  - name: Mohammed Al-Ameen
+    email: alam@zhaw.ch
+    url: https://github.com/mohammed-ali-1
+
